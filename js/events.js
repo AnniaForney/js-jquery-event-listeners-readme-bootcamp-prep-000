@@ -14,3 +14,9 @@ $(document).on('keyup', function(key) {
     alert('r was pressed');
   }
 });
+
+$(document).on('keydown', function(key) {
+  if(key.which == 83){
+      alert('s was pressed');
+  }
+});
