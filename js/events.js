@@ -1,22 +1,33 @@
 //define functions here
-$('img').on('load', function(){
-  //actions you want to happen
-});
+function getIt() {
+  $('p').on('click', function() {
+    alert('hey!')
+  })
+}
 
-$(document).on('keypress', function(key) {
-  if (key.which == 13){
-    alert('enter was pressed');
-  }
-});
+function frameIt() {
+  $('img').on('load', function() {
+    $('img').addClass('tasty')
+  })
+}
 
-$(document).on('keyup', function(key) {
-  if (key.which == 82){
-    alert('r was pressed');
-  }
-});
+function pressIt() {
+  $('#typing').on('keydown', function(e) {
+    // 'g' corresponds to 71
+    if (e.which === 71) {
+      alert("You pressed 'g'!")
+    }
+  })
+}
 
-$(document).on('keydown', function(key) {
-  if(key.which == 83){
-      alert('s was pressed');
-  }
+function submitIt() {
+  $('form').on('submit', function(e) {
+    alert('Your form is going to be submitted now.')
+  })
+}
+
+$(document).ready(function(){
+
+// call functions here
+
 });
