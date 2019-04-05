@@ -1,7 +1,4 @@
 //define functions here
-
-$(document).ready(function(){
-
-// call functions here
-
+$('img').on('load', function(){
+  //actions you want to happen
 });
